@@ -77,42 +77,41 @@ void init_msm_properties(unsigned long msm_id, unsigned long msm_ver, char *boar
     UNUSED(board_type);
 
     property_get("ro.boot.serialno", serial);
-    if (strncmp(serial, "LGD410", 6) == 0) {
-        /* D410, D410hn */
-        if (check_cmdline("model.name=LG-D410hn") == 1) {
-                property_set("ro.product.device", "w7nds");
-                property_set("ro.product.model", "LG-D410hn");
+    if (strncmp(serial, "LGD722", 6) == 0) {
+        /* D722, D722P */
+        if (check_cmdline("model.name=LG-D722hn") == 1) {
+                property_set("ro.product.device", "jagnm");
+                property_set("ro.product.model", "LG-D722hn");
                 property_set("ro.nfc.port", "I2C");
         } else {
-                property_set("ro.product.device", "w7ds");
-                property_set("ro.product.model", "LG-D410");
+                property_set("ro.product.device", "jagnmds");
+                property_set("ro.product.model", "LG-D722");
         }
-        property_set("ro.build.description", "w7ds_global_com-user 5.0.2 LRX22G.A1423481010 15040202274a7 release-keys");
-        property_set("ro.build.fingerprint", "lge/w7ds_global_com/w7ds:5.0.2/LRX22G.A1423481010/15040202274a7:user/release-keys");
+        property_set("ro.build.description", "jagnmds_global_com-user 5.0.2 LRX22G.A1423481010 15040202274a7 release-keys");
+        property_set("ro.build.fingerprint", "lge/jagnmds_global_com/jagnmds:5.0.2/LRX22G.A1423481010/15040202274a7:user/release-keys");
         property_set("persist.radio.multisim.config", "dsds");
-    } else if (strncmp(serial, "LGD405", 6) == 0) {
-        /* D405, D405n */
+    } else if (strncmp(serial, "LGD722P", 6) == 0) {
         if (check_cmdline("model.name=LG-D405n") == 1) {
-                property_set("ro.product.model", "LG-D405n");
-                property_set("ro.product.device", "w7n");
+                property_set("ro.product.model", "LG-D722");
+                property_set("ro.product.device", "jagnmn");
                 property_set("ro.nfc.port", "I2C");
         } else {
-                property_set("ro.product.model", "LG-D405");
-                property_set("ro.product.device", "w7");
+                property_set("ro.product.model", "LG-D722P");
+                property_set("ro.product.device", "jagnm");
         }
-        property_set("ro.build.description", "w7_global_com-user 5.0.2 LRX22G.A1423481010 15040202274a7 release-keys");
-        property_set("ro.build.fingerprint", "lge/w7_global_com/w7ds:5.0.2/LRX22G.A1423481010/15040202274a7:user/release-keys");
+        property_set("ro.build.description", "jagnm_global_com-user 5.0.2 LRX22G.A1423481010 15040202274a7 release-keys");
+        property_set("ro.build.fingerprint", "lge/jagnm_global_com/jagnmds:5.0.2/LRX22G.A1423481010/15040202274a7:user/release-keys");
         property_set("persist.radio.multisim.config", "");
     } else if (strncmp(serial, "LGD415", 6) == 0) {
-        /* D415 */
-        property_set("ro.product.model", "LG-D415");
-        property_set("ro.product.device", "w7");
-        property_set("ro.build.description", "w7_global_com-user 5.0.2 LRX22G.A1423481010 15040202274a7 release-keys");
-        property_set("ro.build.fingerprint", "lge/w7_global_com/w7ds:5.0.2/LRX22G.A1423481010/15040202274a7:user/release-keys");
+        /* D722 */
+        property_set("ro.product.model", "LG-D722");
+        property_set("ro.product.device", "jagnm");
+        property_set("ro.build.description", "jagnm_global_com-user 5.0.2 LRX22G.A1423481010 15040202274a7 release-keys");
+        property_set("ro.build.fingerprint", "lge/jagnm_global_com/jagnmds:5.0.2/LRX22G.A1423481010/15040202274a7:user/release-keys");
         property_set("persist.radio.multisim.config", "");
     } else {
         /* XXX */
-        property_set("ro.product.device", "w7");
+        property_set("ro.product.device", "jagnm");
         property_set("ro.product.model", "Please write your model name to agent00791@gmail.com");
         property_set("persist.radio.multisim.config", "");
     }

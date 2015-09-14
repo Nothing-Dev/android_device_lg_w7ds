@@ -19,7 +19,7 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-1024-dalvik-heap.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
 # Specific overlay
-DEVICE_PACKAGE_OVERLAYS += device/lge/w7/overlay
+DEVICE_PACKAGE_OVERLAYS += device/lge/jagnm/overlay
 
 # Permissions
 PRODUCT_COPY_FILES += \
@@ -54,62 +54,62 @@ PRODUCT_COPY_FILES += \
 
 # Configs
 PRODUCT_COPY_FILES += \
-    device/lge/w7/prebuilt/etc/wifi/p2p_supplicant_overlay.conf:system/etc/wifi/p2p_supplicant_overlay.conf \
-    device/lge/w7/prebuilt/etc/wifi/wpa_supplicant_overlay.conf:system/etc/wifi/wpa_supplicant_overlay.conf \
-    device/lge/w7/prebuilt/etc/hostapd/hostapd.accept:system/etc/hostapd/hostapd.accept \
-    device/lge/w7/prebuilt/etc/hostapd/hostapd.deny:system/etc/hostapd/hostapd.deny \
-    device/lge/w7/prebuilt/etc/hostapd/hostapd_default.conf:system/etc/hostapd/hostapd_default.conf \
-    device/lge/w7/prebuilt/etc/audio_policy.conf:system/etc/audio_policy.conf \
-    device/lge/w7/prebuilt/etc/audio_effects.conf:system/etc/audio_effects.conf \
-    device/lge/w7/prebuilt/etc/media_codecs.xml:system/etc/media_codecs.xml \
-    device/lge/w7/prebuilt/etc/media_profiles.xml:system/etc/media_profiles.xml \
-    device/lge/w7/prebuilt/etc/mixer_paths.xml:system/etc/mixer_paths.xml \
-    device/lge/w7/prebuilt/etc/thermal-engine-8226.conf:system/etc/thermal-engine-8226.conf \
-    device/lge/w7/prebuilt/usr/idc/touch_dev.idc:system/usr/idc/touch_dev.idc \
-    device/lge/w7/prebuilt/usr/keylayout/Generic-D4x5.kl:system/usr/keylayout/Generic-D4x5.kl \
-    device/lge/w7/prebuilt/usr/keylayout/Generic-D410.kl:system/usr/keylayout/Generic-D410.kl \
-    device/lge/w7/prebuilt/etc/init.zetaw.bt.sh:system/etc/init.zetaw.bt.sh \
-    device/lge/w7/prebuilt/etc/msap.conf:system/etc/msap.conf \
-    device/lge/w7/prebuilt/etc/clatd.conf:system/etc/clatd.conf \
-    device/lge/w7/prebuilt/etc/sec_config:system/etc/sec_config \
-    device/lge/w7/prebuilt/etc/libnfc-brcm.conf:system/etc/libnfc-brcm.conf \
-    device/lge/w7/prebuilt/etc/nfc-nci.conf:system/etc/nfc-nci.conf \
-    device/lge/w7/prebuilt/etc/libnfc-nxp.conf:system/etc/libnfc-nxp.conf \
-    device/lge/w7/prebuilt/etc/nfcee_access.xml:system/etc/nfcee_access.xml \
-    device/lge/w7/prebuilt/etc/wifi/WCNSS_cfg.dat:system/etc/firmware/wlan/prima/WCNSS_cfg.dat \
-    device/lge/w7/prebuilt/etc/wifi/WCNSS_qcom_cfg.ini:system/etc/firmware/wlan/prima/WCNSS_qcom_cfg.ini \
-    device/lge/w7/prebuilt/etc/wifi/WCNSS_qcom_wlan_nv.bin:system/etc/firmware/wlan/prima/WCNSS_qcom_wlan_nv.bin \
-    device/lge/w7/prebuilt/etc/wifi/WCNSS_qcom_wlan_nv.bin:system/etc/firmware/wlan/prima/WCNSS_qcom_wlan_nv_boot.bin \
-    device/lge/w7/prebuilt/etc/wifi/WCNSS_qcom_wlan_nv.bin:system/etc/wifi/WCNSS_qcom_wlan_nv.bin \
-    device/lge/w7/prebuilt/etc/wifi/WCNSS_qcom_wlan_nv.bin:system/etc/wifi/WCNSS_qcom_wlan_nv_boot.bin \
-    device/lge/w7/prebuilt/etc/wifi/WCNSS_qcom_cfg.ini:system/etc/wifi/WCNSS_qcom_cfg.ini
+    device/lge/jagnm/prebuilt/etc/wifi/p2p_supplicant_overlay.conf:system/etc/wifi/p2p_supplicant_overlay.conf \
+    device/lge/jagnm/prebuilt/etc/wifi/wpa_supplicant_overlay.conf:system/etc/wifi/wpa_supplicant_overlay.conf \
+    device/lge/jagnm/prebuilt/etc/hostapd/hostapd.accept:system/etc/hostapd/hostapd.accept \
+    device/lge/jagnm/prebuilt/etc/hostapd/hostapd.deny:system/etc/hostapd/hostapd.deny \
+    device/lge/jagnm/prebuilt/etc/hostapd/hostapd_default.conf:system/etc/hostapd/hostapd_default.conf \
+    device/lge/jagnm/prebuilt/etc/audio_policy.conf:system/etc/audio_policy.conf \
+    device/lge/jagnm/prebuilt/etc/audio_effects.conf:system/etc/audio_effects.conf \
+    device/lge/jagnm/prebuilt/etc/media_codecs.xml:system/etc/media_codecs.xml \
+    device/lge/jagnm/prebuilt/etc/media_profiles.xml:system/etc/media_profiles.xml \
+    device/lge/jagnm/prebuilt/etc/mixer_paths.xml:system/etc/mixer_paths.xml \
+    device/lge/jagnm/prebuilt/etc/thermal-engine-8226.conf:system/etc/thermal-engine-8226.conf \
+    device/lge/jagnm/prebuilt/usr/idc/touch_dev.idc:system/usr/idc/touch_dev.idc \
+    device/lge/jagnm/prebuilt/usr/keylayout/Generic-D4x5.kl:system/usr/keylayout/Generic-D4x5.kl \
+    device/lge/jagnm/prebuilt/usr/keylayout/Generic-D410.kl:system/usr/keylayout/Generic-D410.kl \
+    device/lge/jagnm/prebuilt/etc/init.zetaw.bt.sh:system/etc/init.zetaw.bt.sh \
+    device/lge/jagnm/prebuilt/etc/msap.conf:system/etc/msap.conf \
+    device/lge/jagnm/prebuilt/etc/clatd.conf:system/etc/clatd.conf \
+    device/lge/jagnm/prebuilt/etc/sec_config:system/etc/sec_config \
+    device/lge/jagnm/prebuilt/etc/libnfc-brcm.conf:system/etc/libnfc-brcm.conf \
+    device/lge/jagnm/prebuilt/etc/nfc-nci.conf:system/etc/nfc-nci.conf \
+    device/lge/jagnm/prebuilt/etc/libnfc-nxp.conf:system/etc/libnfc-nxp.conf \
+    device/lge/jagnm/prebuilt/etc/nfcee_access.xml:system/etc/nfcee_access.xml \
+    device/lge/jagnm/prebuilt/etc/wifi/WCNSS_cfg.dat:system/etc/firmware/wlan/prima/WCNSS_cfg.dat \
+    device/lge/jagnm/prebuilt/etc/wifi/WCNSS_qcom_cfg.ini:system/etc/firmware/wlan/prima/WCNSS_qcom_cfg.ini \
+    device/lge/jagnm/prebuilt/etc/wifi/WCNSS_qcom_wlan_nv.bin:system/etc/firmware/wlan/prima/WCNSS_qcom_wlan_nv.bin \
+    device/lge/jagnm/prebuilt/etc/wifi/WCNSS_qcom_wlan_nv.bin:system/etc/firmware/wlan/prima/WCNSS_qcom_wlan_nv_boot.bin \
+    device/lge/jagnm/prebuilt/etc/wifi/WCNSS_qcom_wlan_nv.bin:system/etc/wifi/WCNSS_qcom_wlan_nv.bin \
+    device/lge/jagnm/prebuilt/etc/wifi/WCNSS_qcom_wlan_nv.bin:system/etc/wifi/WCNSS_qcom_wlan_nv_boot.bin \
+    device/lge/jagnm/prebuilt/etc/wifi/WCNSS_qcom_cfg.ini:system/etc/wifi/WCNSS_qcom_cfg.ini
 
 # Ramdisk
 PRODUCT_COPY_FILES += \
-    device/lge/w7/rootdir/fstab.w7:root/fstab.w7 \
-    device/lge/w7/rootdir/init.w7.rc:root/init.w7.rc \
-    device/lge/w7/rootdir/init.w7.rc:root/init.w7.rc \
-    device/lge/w7/rootdir/init.w7.usb.rc:root/init.w7.usb.rc \
-    device/lge/w7/rootdir/ueventd.w7.rc:root/ueventd.w7.rc \
-    device/lge/w7/rootdir/init.baseband.sh:root/init.baseband.sh
+    device/lge/jagnm/rootdir/fstab.jagnm:root/fstab.jagnm \
+    device/lge/jagnm/rootdir/init.jagnm.rc:root/init.jagnm.rc \
+    device/lge/jagnm/rootdir/init.jagnm.rc:root/init.jagnm.rc \
+    device/lge/jagnm/rootdir/init.jagnm.usb.rc:root/init.jagnm.usb.rc \
+    device/lge/jagnm/rootdir/ueventd.jagnm.rc:root/ueventd.jagnm.rc \
+    device/lge/jagnm/rootdir/init.baseband.sh:root/init.baseband.sh
 
 # OTA
 PRODUCT_COPY_FILES += \
-    device/lge/w7/prebuilt/fixup.sh:fixup.sh
+    device/lge/jagnm/prebuilt/fixup.sh:fixup.sh
 
 # TWRP
 PRODUCT_COPY_FILES += \
-    device/lge/w7/rootdir/twrp.fstab:recovery/root/etc/twrp.fstab
+    device/lge/jagnm/rootdir/twrp.fstab:recovery/root/etc/twrp.fstab
 
 # Offmode Charging
 PRODUCT_PACKAGES += \
-    charger_res_w7 \
-    charger_w7
+    charger_res_jagnm \
+    charger_jagnm
 
 # Audio
 PRODUCT_PACKAGES += \
-    audio.primary.msm8226 \
-    audio_policy.msm8226 \
+    audio.primary.msm8926 \
+    audio_policy.msm8926 \
     audio.a2dp.default \
     audio.usb.default \
     audio.r_submix.default \
@@ -173,7 +173,7 @@ PRODUCT_PACKAGES += \
 
 # GPS
 PRODUCT_PACKAGES += \
-    gps.msm8226
+    gps.msm8926
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/gps/gps.conf:system/etc/gps.conf \
@@ -203,16 +203,16 @@ PRODUCT_PACKAGES += \
 
 # GPS
 PRODUCT_PACKAGES += \
-    gps.msm8226
+    gps.msm8926
 
 # HAL
 PRODUCT_PACKAGES += \
-    copybit.msm8226\
-    gralloc.msm8226 \
-    hwcomposer.msm8226 \
-    lights.msm8226 \
-    memtrack.msm8226 \
-    power.msm8226
+    copybit.msm8926\
+    gralloc.msm8926 \
+    hwcomposer.msm8926 \
+    lights.msm8926 \
+    memtrack.msm8926 \
+    power.msm8926
 
 # QRNG
 PRODUCT_PACKAGES += qrngp
@@ -345,7 +345,7 @@ PRODUCT_PACKAGES += \
     nfc_nci.pn54x.default \
     com.android.nfc_extras
 
-NFCEE_ACCESS_PATH := device/lge/w7/prebuilt/etc/nfcee_access.xml
+NFCEE_ACCESS_PATH := device/lge/jagnm/prebuilt/etc/nfcee_access.xml
 
 # QC time services
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -355,13 +355,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.ksm.default=1
 
-# CmUpdater
-PRODUCT_PROPERTY_OVERRIDES += \
-    cm.updater.uri=http://api.quarx.cm-for.us/api
-
 # Screen density
 PRODUCT_AAPT_CONFIG := normal hdpi xhdpi
 PRODUCT_AAPT_PREF_CONFIG := xhdpi
 
-$(call inherit-product, vendor/lge/w7/w7-vendor.mk)
+$(call inherit-product, vendor/lge/jagnm/jagnm-vendor.mk)
 

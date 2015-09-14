@@ -24,22 +24,22 @@
 USE_CAMERA_STUB := false
 TARGET_NO_BOOTLOADER := true
 
-TARGET_SPECIFIC_HEADER_PATH += device/lge/w7/include
+TARGET_SPECIFIC_HEADER_PATH += device/lge/jagnm/include
 
 # Releasetools
-TARGET_RELEASETOOLS_EXTENSIONS := device/lge/w7
+TARGET_RELEASETOOLS_EXTENSIONS := device/lge/jagnm
 
 # Vendor Init
 TARGET_UNIFIED_DEVICE := true
 TARGET_INIT_VENDOR_LIB := libinit_msm
-TARGET_LIBINIT_DEFINES_FILE := device/lge/w7/init/init_w7.c
-TARGET_OTA_ASSERT_DEVICE := w7,w7ds,w7n
+TARGET_LIBINIT_DEFINES_FILE := device/lge/jagnm/init/init_jagnm.c
+TARGET_OTA_ASSERT_DEVICE := jagnm,jagnmds,jagnmn
 TARGET_INCREMENTAL_OTA_VERBATIM_FILES := /system/priv-app/OneTimeInitializer/OneTimeInitializer.apk /system/app/Provision/Provision.apk
 ART_USE_HSPACE_COMPACT := true
 MALLOC_IMPL := dlmalloc
 
 # Platform
-TARGET_BOARD_PLATFORM := msm8226
+TARGET_BOARD_PLATFORM := msm8926
 TARGET_BOARD_PLATFORM_GPU := qcom-adreno305
 
 # Architecture
@@ -50,14 +50,14 @@ TARGET_CPU_ABI2 := armeabi
 TARGET_CPU_MEMCPY_BASE_OPT_DISABLE := true
 TARGET_CPU_VARIANT := krait
 
-TARGET_BOOTLOADER_BOARD_NAME := w7
+TARGET_BOOTLOADER_BOARD_NAME := jagnm
 
 # Kernel image
 BOARD_KERNEL_SEPARATED_DT := true
-BOARD_CUSTOM_BOOTIMG_MK := device/lge/w7/mkbootimg.mk
-TARGET_KERNEL_SOURCE := kernel/lge/msm8226
-TARGET_KERNEL_CONFIG := w7ds_cyanogenmod_defconfig
-BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.console=ttyHSL0 user_debug=31 msm_rtb.filter=0x37 androidboot.hardware=w7 androidboot.selinux=enforcing
+BOARD_CUSTOM_BOOTIMG_MK := device/lge/jagnm/mkbootimg.mk
+TARGET_KERNEL_SOURCE := kernel/lge/msm8926
+TARGET_KERNEL_CONFIG := jagnmds_cyanogenmod_defconfig
+BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.console=ttyHSL0 user_debug=31 msm_rtb.filter=0x37 androidboot.hardware=jagnm androidboot.selinux=enforcing
 BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01000000 --tags_offset 0x00000100
@@ -89,13 +89,13 @@ TARGET_USES_ION := true
 USE_OPENGL_RENDERER := true
 
 # Hardware tunables framework
-BOARD_HARDWARE_CLASS := device/lge/w7/cmhw/
+BOARD_HARDWARE_CLASS := device/lge/jagnm/cmhw/
 
 # RIL
-BOARD_RIL_CLASS := ../../../device/lge/w7/ril/
+BOARD_RIL_CLASS := ../../../device/lge/jagnm/ril/
 
 # Bluetooth
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/lge/w7/bluetooth
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/lge/jagnm/bluetooth
 BOARD_HAVE_BLUETOOTH := true
 BOARD_HAVE_BLUETOOTH_QCOM := true
 BLUETOOTH_HCI_USE_MCT := true
@@ -130,7 +130,7 @@ TARGET_USERIMAGES_USE_F2FS := true
 
 # TWRP Recovery
 BOARD_HAS_NO_SELECT_BUTTON := true
-TARGET_RECOVERY_FSTAB := device/lge/w7/rootdir/fstab.w7
+TARGET_RECOVERY_FSTAB := device/lge/jagnm/rootdir/fstab.jagnm
 RECOVERY_FSTAB_VERSION := 2
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
 DEVICE_RESOLUTION := 540x960
@@ -171,5 +171,5 @@ TARGET_POWERHAL_VARIANT := qcom
 include device/qcom/sepolicy/sepolicy.mk
 
 BOARD_SEPOLICY_DIRS += \
-        device/lge/w7/sepolicy
+        device/lge/jagnm/sepolicy
 
